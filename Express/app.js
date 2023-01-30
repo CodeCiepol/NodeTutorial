@@ -13,9 +13,12 @@ app.use((req,res,next)=>{
 
 app.use((req,res,next)=>{
     console.log('in another the middleware!')
+    res.send("<h1>hello from express </h1>")
 })//add new midleware function
 // next is the function
 
-const server = http.createServer(app)
+// const server = http.createServer(app)
 
-server.listen(3000)
+// server.listen(3000)
+
+app.listen(3000)
