@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/admin', adminData.routes);
 app.use(shopRoutes);
 
-app.set('view engine','pug')
+app.set('view engine','pug')//seting default templating engine
 app.set('views', 'views')
 
 app.use((req, res, next) => {
