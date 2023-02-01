@@ -11,7 +11,7 @@ router.get('/', (req, res, next) => {
   // console.log('shop.js', adminData.products);
   // res.sendFile(path.join(rootDir, 'views', 'shop.html'));
   const products = adminData.products
-    res.render('shop',{products: products,docTitle: 'shop'})//it will use default templating engine (which is set in app.js)
+    res.render('shop',{products: products,pageTitle: 'shop', path: '/'})//it will use default templating engine (which is set in app.js)
 });
 
 module.exports = router;
