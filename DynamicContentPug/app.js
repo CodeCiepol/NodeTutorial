@@ -19,7 +19,7 @@ app.set('views', 'views')
 
 app.use((req, res, next) => {
   // res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
-  res.render('404') //it will use default templating engine (which is set in app.js)
+  res.render('404',{pageTitle: "not found"}) //it will use default templating engine (which is set in app.js)
 })
 
 app.listen(3000)
